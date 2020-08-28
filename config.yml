@@ -1,8 +1,9 @@
 delay.minutes: 45
 monitor:
   - page: rogue-kg-change-plates
-    items: 
+    products: 
       - 24519
   - page: ab-2-adjustable-bench
-    items:
-      - 6757
+    products:
+      - label: Change Plate 2.5
+        id: 6757
