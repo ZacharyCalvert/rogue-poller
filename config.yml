@@ -1,1 +1,8 @@
 delay.minutes: 45
+monitor:
+  - page: rogue-kg-change-plates
+    items: 
+      - 24519
+  - page: ab-2-adjustable-bench
+    items:
+      - 6757
