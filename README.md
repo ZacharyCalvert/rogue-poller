@@ -18,6 +18,8 @@ COVID-19 becomes COVID-22?  Maybe this is integrated into twitter and pages me v
 
 # Running 
 
+Biggest pain is reverse engineering their product pages to find the page and the correct product identity.  
+
 ```
 go get github.com/ZacharyCalvert/rogue-poller
 ```
