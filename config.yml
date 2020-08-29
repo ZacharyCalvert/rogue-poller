@@ -1,9 +1,74 @@
 delay.minutes: 45
-monitor:
-  - page: rogue-kg-change-plates
-    products: 
-      - 24519
+products:
+  - page: rogue-ab-3-adjustable-bench
+    id: 34074
+    label: AB-3 Adjustable Bench
+  - page: rogue-hi-temp-bumper-plates
+    id: 22857
+    label: 10LB Hi-Temp Bumper
   - page: ab-2-adjustable-bench
-    products:
-      - label: Change Plate 2.5
-        id: 6757
+    id: 6757
+    label: AB-2 Adjustable Bench
+  - page: rogue-hi-temp-bumper-plates
+    id: 22859
+    label: 25LB Hi-Temp Bumper
+  - page: rogue-12-sided-urethane-grip-plates
+    id: 89405
+    label: 2.5 LB Plates
+  - page: rogue-12-sided-urethane-grip-plates
+    id: 89407
+    label: 5 LB Plates
+  - page: rogue-12-sided-urethane-grip-plates
+    id: 89409
+    label: 10 LB Plates
+  - page: rogue-12-sided-urethane-grip-plates
+    id: 89411
+    label: 25 LB Plates
+  - page: rogue-6-shooter-urethane-olympic-grip-plates
+    id: 35767
+    label: 2.5 LB Plate
+  - page: rogue-6-shooter-urethane-olympic-grip-plates
+    id: 35771
+    label: 5 LB Plate
+  - page: rogue-6-shooter-urethane-olympic-grip-plates
+    id: 35773
+    label: 10 LB Plate
+  - page: rogue-6-shooter-urethane-olympic-grip-plates
+    id: 35777
+    label: 25 LB Plate
+  - page: rogue-6-shooter-olympic-plates
+    id: 47205
+    label: 2.5 LB Plate
+  - page: rogue-6-shooter-olympic-plates
+    id: 47211
+    label: 5 LB Plate
+  - page: rogue-6-shooter-olympic-plates
+    id: 47213
+    label: 10 LB Plate
+  - page: rogue-6-shooter-olympic-plates
+    id: 47215
+    label: 25 LB Plate
+  - page: rogue-olympic-plates
+    id: 7185
+    label: 2.5 LB Plate
+  - page: rogue-olympic-plates
+    id: 7183
+    label: 5 LB Plate
+  - page: rogue-olympic-plates
+    id: 7181
+    label: 10 LB Plate
+  - page: rogue-olympic-plates
+    id: 7179
+    label: 25 LB Plate
+  - page: york-legacy-iron-plates
+    id: 315
+    label: 2.5 LB Plate
+  - page: york-legacy-iron-plates
+    id: 314
+    label: 5 LB Plate
+  - page: york-legacy-iron-plates
+    id: 157
+    label: 10 LB Plate
+  - page: york-legacy-iron-plates
+    id: 159
+    label: 25 LB Plate

@@ -25,14 +25,17 @@ Plan of attack:
 
 func main() {
 	configYmlPtr := flag.String("config", "config.yml", "YML configuration for products to monitor.")
-	loadProductConfig(*configYmlPtr)
+	config := loadProductConfig(*configYmlPtr)
+	products := config["products"].([]interface{})
 
-	// we know rogue-kg-change-plates 24519 is available, 24521 is not
-
-	if inspectPageForProduct("rogue-kg-change-plates", "24521") {
-		fmt.Println("Product found")
-	} else {
-		fmt.Println("Product not found")
+	for _, entry := range products {
+		product := entry.(map[interface{}]interface{})
+		page := product["page"].(string)
+		label := product["label"].(string)
+		id := product["id"].(int)
+		if inspectPageForProduct(page, fmt.Sprintf("%d", id)) {
+			fmt.Printf("https://www.roguefitness.com/%s has stock available of %s", page, label)
+		}
 	}
 }
 
@@ -59,7 +62,6 @@ func inspectPageForProduct(page string, identifier string) bool {
 
 	re := regexp.MustCompile("\n([^\n]*)super_group\\[" + identifier + "\\]([^\n]*)\n")
 
-	fmt.Printf("%q\n", re.Find([]byte(html)))
 	found := re.Find([]byte(html))
 
 	return found != nil && len(found) > 0 && !strings.Contains(string(found), "type=\"hidden\"")
