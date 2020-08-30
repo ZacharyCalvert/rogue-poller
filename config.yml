@@ -72,3 +72,9 @@ products:
   - page: york-legacy-iron-plates
     id: 159
     label: 25 LB Plate
+  - page: rogue-kettlebells
+    id: 7157
+    label: 35 LB Kettlebell
+  - page: rogue-kettlebells
+    id: 72613
+    label: 40 LB Kettlebell
